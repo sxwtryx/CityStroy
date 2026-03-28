@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <div class="navigation">
+
+            <a href="#about" class="logo"><img src="Logo/logocompanyfinall.png" alt=""></a>
+
+            <ul id="spisoc" class="navbar__nav">
+                <li><a href="#about">О компании</a></li>
+                <li><a href="#services">Порядок и стоимость работ</a></li>
+                <li class="nav-contacts-item">
+                    <button type="button" class="contacts-trigger" id="contactsTrigger" aria-expanded="false" aria-controls="contactsMenu">
+                        <span class="contacts-trigger-icon contacts-icon contacts-icon-phone"></span>
+                        <span class="contacts-trigger-content">
+                            <span class="contacts-trigger-label">Срочный вопрос:</span>
+                            <span class="contacts-trigger-number">8&nbsp;936&nbsp;555&nbsp;55&nbsp;27</span>
+                            <span class="contacts-trigger-note">Перезвоним в течение 30 минут</span>
+                        </span>
+                        <span class="contacts-trigger-arrow" aria-hidden="true"></span>
+                    </button>
+                </li>
+            </ul>
+
+            <div class="contacts-menu" id="contactsMenu" aria-hidden="true">
+                <div class="contacts-menu-section contacts-menu-section-schedule">
+                    <div class="contacts-item contacts-item-schedule">
+                        <div class="contacts-icon contacts-icon-clock"></div>
+                        <div class="contacts-text">
+                            <span class="contacts-panel-title">График работы</span>
+                            <span class="contacts-value">
+                                <span class="contacts-value-big">24/7</span>
+                                <span class="contacts-value-big">с 8:00 до 21:00, 7 дней в неделю</span>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                <div class="contacts-menu-section contacts-menu-section-contacts">
+                    <h3 class="contacts-panel-title">Контактные данные</h3>
+                    <div class="contacts-item">
+                        <div class="contacts-icon contacts-icon-mail"></div>
+                        <div class="contacts-text">
+                            <span class="contacts-label">Почта:</span>
+                            <a href="mailto:OOOSitiStroy555@yandex.ru" class="contacts-link">OOOSitiStroy555@yandex.ru</a>
+                        </div>
+                    </div>
+                    <div class="contacts-item">
+                        <div class="contacts-icon contacts-icon-phone"></div>
+                        <div class="contacts-text">
+                            <span class="contacts-label">Срочный вопрос:</span>
+                            <a href="tel:89365555527" class="contacts-link">8&nbsp;936&nbsp;555&nbsp;55&nbsp;27</a>
+                            <span class="contacts-note">Перезвоним в течение 30 минут</span>
+                        </div>
+                    </div>
+                    <div class="contacts-actions-title">Связаться в мессенджере</div>
+                    <a href="https://max.ru/u/f9LHodD0cOJYBAJvbZWTXitS9h4YSpRNs6BXlHX8YGGT_exEkQr0sru_6zA" class="contacts-btn contacts-btn-max" target="_blank" rel="noopener noreferrer">
+                        <span class="contacts-icon contacts-icon-max"></span>
+                        <span>Написать в MAX</span>
+                    </a>
+                    <a href="https://t.me/OOOSitiStroy" class="contacts-btn contacts-btn-telegram" target="_blank" rel="noopener noreferrer">
+                        <span class="contacts-icon contacts-icon-telegram"></span>
+                        <span>Написать в Telegram</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="contacts-menu-backdrop" id="contactsMenuBackdrop"></div>
+
+        <div class="section" id="about">
+            <div class="about-wrapper">
+                <div class="about-content">
+                    <h2 class="about-title">О компании</h2>
+                    <p class="about-desc">Мы специализируемся на ремонте, строительстве и реконструкции отопительных сетей ХВС/ГВС/ИТП/ЦТП.</p>
+
+                    <div class="about-copy-group">
+                        <h3 class="about-subtitle">Наши ценности</h3>
+                        <p class="about-desc">Главная наша ценность — качественное выполнение работ.</p>
+                    </div>
+
+                    <div class="about-copy-group">
+                        <h3 class="about-subtitle">Почему мы</h3>
+                        <p class="about-tagline">Мы умеем, знаем и делаем.</p>
+                    </div>
+
+                    <div class="about-copy-group">
+                        <h3 class="about-subtitle">Услуги</h3>
+                        <ul class="about-services">
+                            <li>Аварийные ремонты сетей ХВС/ГВС</li>
+                            <li>Реконструкция тепловых сетей ЦТП/ИТП</li>
+                            <li>Строительство тепловых сетей ХВС/ГВС, тепловых пунктов ИТП/ЦТП</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="about-gallery" aria-label="Галерея направлений работ">
+                    <div class="about-reel about-reel-forward about-reel-gallery" id="emergencyReel" data-lightbox-title="Аварийные работы">
+                        <h3 class="about-reel-title">Аварийные работы</h3>
+                        <div class="about-reel-window">
+                            <div class="about-reel-track">
+                                <div class="about-reel-set">
+                                    <button type="button" class="about-photo-btn" data-index="0" aria-label="Открыть фото 1">
+                                        <img class="about-photo" src="img/Avarrobot/BIYB6231.JPG" alt="Аварийные работы 1" loading="lazy">
+                                    </button>
+                                    <button type="button" class="about-photo-btn" data-index="1" aria-label="Открыть фото 2">
+                                        <img class="about-photo" src="img/Avarrobot/IMG_0291.JPG" alt="Аварийные работы 2" loading="lazy">
+                                    </button>
+                                    <button type="button" class="about-photo-btn" data-index="2" aria-label="Открыть фото 3">
+                                        <img class="about-photo" src="img/Avarrobot/IMG_0293.JPG" alt="Аварийные работы 3" loading="lazy">
+                                    </button>
+                                    <button type="button" class="about-photo-btn" data-index="3" aria-label="Открыть фото 4">
+                                        <img class="about-photo" src="img/Avarrobot/IMG_0294.JPG" alt="Аварийные работы 4" loading="lazy">
+                                    </button>
+                                    <button type="button" class="about-photo-btn" data-index="4" aria-label="Открыть фото 5">
+                                        <img class="about-photo" src="img/Avarrobot/IMG_0352.JPG" alt="Аварийные работы 5" loading="lazy">
+                                    </button>
+                                    <button type="button" class="about-photo-btn" data-index="5" aria-label="Открыть фото 6">
+                                        <img class="about-photo" src="img/Avarrobot/IMG_0359.JPG" alt="Аварийные работы 6" loading="lazy">
+                                    </button>
+                                    <button type="button" class="about-photo-btn" data-index="6" aria-label="Открыть фото 7">
+                                        <img class="about-photo" src="img/Avarrobot/IMG_0360.JPG" alt="Аварийные работы 7" loading="lazy">
+                                    </button>
+                                    <button type="button" class="about-photo-btn" data-index="7" aria-label="Открыть фото 8">
+                                        <img class="about-photo" src="img/Avarrobot/IMG_0370.JPG" alt="Аварийные работы 8" loading="lazy">
+                                    </button>
+                                    <button type="button" class="about-photo-btn" data-index="8" aria-label="Открыть фото 9">
+                                        <img class="about-photo" src="img/Avarrobot/IMG_0371.JPG" alt="Аварийные работы 9" loading="lazy">
+                                    </button>
+                                    <button type="button" class="about-photo-btn" data-index="9" aria-label="Открыть фото 10">
+                                        <img class="about-photo" src="img/Avarrobot/IMG_0422.JPG" alt="Аварийные работы 10" loading="lazy">
+                                    </button>
+                                    <button type="button" class="about-photo-btn" data-index="10" aria-label="Открыть фото 11">
+                                        <img class="about-photo" src="img/Avarrobot/IMG_0423.JPG" alt="Аварийные работы 11" loading="lazy">
+                                    </button>
+                                    <button type="button" class="about-photo-btn" data-index="11" aria-label="Открыть фото 12">
+                                        <img class="about-photo" src="img/Avarrobot/IMG_0466.JPG" alt="Аварийные работы 12" loading="lazy">
+                                    </button>
+                                    <button type="button" class="about-photo-btn" data-index="12" aria-label="Открыть фото 13">
+                                        <img class="about-photo" src="img/Avarrobot/IMG_0517.JPG" alt="Аварийные работы 13" loading="lazy">
+                                    </button>
+                                    <button type="button" class="about-photo-btn" data-index="13" aria-label="Открыть фото 14">
+                                        <img class="about-photo" src="img/Avarrobot/IMG_0518.JPG" alt="Аварийные работы 14" loading="lazy">
+                                    </button>
+                                    <button type="button" class="about-photo-btn" data-index="14" aria-label="Открыть фото 15">
+                                        <img class="about-photo" src="img/Avarrobot/IMG_0519.JPG" alt="Аварийные работы 15" loading="lazy">
+                                    </button>
+                                    <button type="button" class="about-photo-btn" data-index="15" aria-label="Открыть фото 16">
+                                        <img class="about-photo" src="img/Avarrobot/IMG_0592.JPG" alt="Аварийные работы 16" loading="lazy">
+                                    </button>
+                                    <button type="button" class="about-photo-btn" data-index="16" aria-label="Открыть фото 17">
+                                        <img class="about-photo" src="img/Avarrobot/IMG_0593.JPG" alt="Аварийные работы 17" loading="lazy">
+                                    </button>
+                                    <button type="button" class="about-photo-btn" data-index="17" aria-label="Открыть фото 18">
+                                        <img class="about-photo" src="img/Avarrobot/IMG_0596.JPG" alt="Аварийные работы 18" loading="lazy">
+                                    </button>
+                                    <button type="button" class="about-photo-btn" data-index="18" aria-label="Открыть фото 19">
+                                        <img class="about-photo" src="img/Avarrobot/IMG_0599.JPG" alt="Аварийные работы 19" loading="lazy">
+                                    </button>
+                                    <button type="button" class="about-photo-btn" data-index="19" aria-label="Открыть фото 20">
+                                        <img class="about-photo" src="img/Avarrobot/IMG_0608.JPG" alt="Аварийные работы 20" loading="lazy">
+                                    </button>
+                                    <button type="button" class="about-photo-btn" data-index="20" aria-label="Открыть фото 21">
+                                        <img class="about-photo" src="img/Avarrobot/JDMA6284.JPG" alt="Аварийные работы 21" loading="lazy">
+                                    </button>
+                                    <button type="button" class="about-photo-btn" data-index="21" aria-label="Открыть фото 22">
+                                        <img class="about-photo" src="img/Avarrobot/PJVO9143.JPG" alt="Аварийные работы 22" loading="lazy">
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="about-reel about-reel-reverse about-reel-gallery" id="meterReel" data-lightbox-title="Реконструкция узлов учета">
+                        <h3 class="about-reel-title">Реконструкция узлов учета</h3>
+                        <div class="about-reel-window">
+                            <div class="about-reel-track">
+                                <div class="about-reel-set">
+                                    <button type="button" class="about-photo-btn" data-index="0" aria-label="Открыть фото 1">
+                                        <img class="about-photo" src="img/RecYzYt/AYVO1944.JPG" alt="Реконструкция узлов учета 1" loading="lazy">
+                                    </button>
+                                    <button type="button" class="about-photo-btn" data-index="1" aria-label="Открыть фото 2">
+                                        <img class="about-photo" src="img/RecYzYt/CYRU2375.JPG" alt="Реконструкция узлов учета 2" loading="lazy">
+                                    </button>
+                                    <button type="button" class="about-photo-btn" data-index="2" aria-label="Открыть фото 3">
+                                        <img class="about-photo" src="img/RecYzYt/HRGS1806.JPG" alt="Реконструкция узлов учета 3" loading="lazy">
+                                    </button>
+                                    <button type="button" class="about-photo-btn" data-index="3" aria-label="Открыть фото 4">
+                                        <img class="about-photo" src="img/RecYzYt/IMG_9714.jpg" alt="Реконструкция узлов учета 4" loading="lazy">
+                                    </button>
+                                    <button type="button" class="about-photo-btn" data-index="4" aria-label="Открыть фото 5">
+                                        <img class="about-photo" src="img/RecYzYt/IMG_9728.jpg" alt="Реконструкция узлов учета 5" loading="lazy">
+                                    </button>
+                                    <button type="button" class="about-photo-btn" data-index="5" aria-label="Открыть фото 6">
+                                        <img class="about-photo" src="img/RecYzYt/IMG_9729[1].jpg" alt="Реконструкция узлов учета 6" loading="lazy">
+                                    </button>
+                                    <button type="button" class="about-photo-btn" data-index="6" aria-label="Открыть фото 7">
+                                        <img class="about-photo" src="img/RecYzYt/LEKO6586.JPG" alt="Реконструкция узлов учета 7" loading="lazy">
+                                    </button>
+                                    <button type="button" class="about-photo-btn" data-index="7" aria-label="Открыть фото 8">
+                                        <img class="about-photo" src="img/RecYzYt/LVAQ4493.JPG" alt="Реконструкция узлов учета 8" loading="lazy">
+                                    </button>
+                                    <button type="button" class="about-photo-btn" data-index="8" aria-label="Открыть фото 9">
+                                        <img class="about-photo" src="img/RecYzYt/TOER6966.JPG" alt="Реконструкция узлов учета 9" loading="lazy">
+                                    </button>
+                                    <button type="button" class="about-photo-btn" data-index="9" aria-label="Открыть фото 10">
+                                        <img class="about-photo" src="img/RecYzYt/XOSK9733.JPG" alt="Реконструкция узлов учета 10" loading="lazy">
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="about-reel about-reel-forward about-reel-slow about-reel-gallery" id="magistralReel" data-lightbox-title="Строительство магистрали">
+                        <h3 class="about-reel-title">Строительство магистрали</h3>
+                        <div class="about-reel-window">
+                            <div class="about-reel-track">
+                                <div class="about-reel-set">
+                                    <button type="button" class="about-photo-btn" data-index="0" aria-label="Открыть фото 1">
+                                        <img class="about-photo" src="img/StroilMagist/BHWQ3148.JPG" alt="Строительство магистрали 1" loading="lazy">
+                                    </button>
+                                    <button type="button" class="about-photo-btn" data-index="1" aria-label="Открыть фото 2">
+                                        <img class="about-photo" src="img/StroilMagist/DKQT2650.JPG" alt="Строительство магистрали 2" loading="lazy">
+                                    </button>
+                                    <button type="button" class="about-photo-btn" data-index="2" aria-label="Открыть фото 3">
+                                        <img class="about-photo" src="img/StroilMagist/DMHW6425.JPG" alt="Строительство магистрали 3" loading="lazy">
+                                    </button>
+                                    <button type="button" class="about-photo-btn" data-index="3" aria-label="Открыть фото 4">
+                                        <img class="about-photo" src="img/StroilMagist/DPYO9948.JPG" alt="Строительство магистрали 4" loading="lazy">
+                                    </button>
+                                    <button type="button" class="about-photo-btn" data-index="4" aria-label="Открыть фото 5">
+                                        <img class="about-photo" src="img/StroilMagist/FDKN2533.JPG" alt="Строительство магистрали 5" loading="lazy">
+                                    </button>
+                                    <button type="button" class="about-photo-btn" data-index="5" aria-label="Открыть фото 6">
+                                        <img class="about-photo" src="img/StroilMagist/FQFM3788.JPG" alt="Строительство магистрали 6" loading="lazy">
+                                    </button>
+                                    <button type="button" class="about-photo-btn" data-index="6" aria-label="Открыть фото 7">
+                                        <img class="about-photo" src="img/StroilMagist/HUEB1630.JPG" alt="Строительство магистрали 7" loading="lazy">
+                                    </button>
+                                    <button type="button" class="about-photo-btn" data-index="7" aria-label="Открыть фото 8">
+                                        <img class="about-photo" src="img/StroilMagist/IIXT6520.JPG" alt="Строительство магистрали 8" loading="lazy">
+                                    </button>
+                                    <button type="button" class="about-photo-btn" data-index="8" aria-label="Открыть фото 9">
+                                        <img class="about-photo" src="img/StroilMagist/IMG_0031.JPG" alt="Строительство магистрали 9" loading="lazy">
+                                    </button>
+                                    <button type="button" class="about-photo-btn" data-index="9" aria-label="Открыть фото 10">
+                                        <img class="about-photo" src="img/StroilMagist/IMG_0032.JPG" alt="Строительство магистрали 10" loading="lazy">
+                                    </button>
+                                    <button type="button" class="about-photo-btn" data-index="10" aria-label="Открыть фото 11">
+                                        <img class="about-photo" src="img/StroilMagist/IMG_0033.JPG" alt="Строительство магистрали 11" loading="lazy">
+                                    </button>
+                                    <button type="button" class="about-photo-btn" data-index="11" aria-label="Открыть фото 12">
+                                        <img class="about-photo" src="img/StroilMagist/IMG_0034.JPG" alt="Строительство магистрали 12" loading="lazy">
+                                    </button>
+                                    <button type="button" class="about-photo-btn" data-index="12" aria-label="Открыть фото 13">
+                                        <img class="about-photo" src="img/StroilMagist/IMG_0035.JPG" alt="Строительство магистрали 13" loading="lazy">
+                                    </button>
+                                    <button type="button" class="about-photo-btn" data-index="13" aria-label="Открыть фото 14">
+                                        <img class="about-photo" src="img/StroilMagist/IMG_0036.JPG" alt="Строительство магистрали 14" loading="lazy">
+                                    </button>
+                                    <button type="button" class="about-photo-btn" data-index="14" aria-label="Открыть фото 15">
+                                        <img class="about-photo" src="img/StroilMagist/LTAT8026.JPG" alt="Строительство магистрали 15" loading="lazy">
+                                    </button>
+                                    <button type="button" class="about-photo-btn" data-index="15" aria-label="Открыть фото 16">
+                                        <img class="about-photo" src="img/StroilMagist/LVRQ9149.JPG" alt="Строительство магистрали 16" loading="lazy">
+                                    </button>
+                                    <button type="button" class="about-photo-btn" data-index="16" aria-label="Открыть фото 17">
+                                        <img class="about-photo" src="img/StroilMagist/QKQJ8512.JPG" alt="Строительство магистрали 17" loading="lazy">
+                                    </button>
+                                    <button type="button" class="about-photo-btn" data-index="17" aria-label="Открыть фото 18">
+                                        <img class="about-photo" src="img/StroilMagist/VLOR5445.JPG" alt="Строительство магистрали 18" loading="lazy">
+                                    </button>
+                                    <button type="button" class="about-photo-btn" data-index="18" aria-label="Открыть фото 19">
+                                        <img class="about-photo" src="img/StroilMagist/WGRZ6304.JPG" alt="Строительство магистрали 19" loading="lazy">
+                                    </button>
+                                    <button type="button" class="about-photo-btn" data-index="19" aria-label="Открыть фото 20">
+                                        <img class="about-photo" src="img/StroilMagist/XJTN8396.JPG" alt="Строительство магистрали 20" loading="lazy">
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="section" id="services">
+            <div class="services-shell">
+                <div class="services-heading">
+                    <h2 class="services-main-title">Порядок и стоимость работ</h2>
+                    <p class="services-main-desc">Здесь собрали, от чего зависит стоимость и как проходит работа: от первого выезда и расчёта до сдачи объекта в эксплуатацию.</p>
+                </div>
+                <div class="services-wrapper">
+                    <div class="services-block services-prices">
+                        <h3 class="services-block-title">Что влияет на стоимость</h3>
+                        <p class="services-intro">Итоговая цена рассчитывается индивидуально под объект, сезон и фактический объём задач.</p>
+                        <p class="services-price-from">Стоимость работ <strong>от 250 тыс. рублей</strong></p>
+                        <p class="services-factors-label">На расчёт стоимости влияют:</p>
+                        <ul class="services-factors">
+                            <li>Сезон (Лето/Зима)</li>
+                            <li>Площадь проведения работ</li>
+                            <li>Объём работ</li>
+                            <li>Материалы</li>
+                            <li>Сроки выполнения</li>
+                        </ul>
+                    </div>
+                    <div class="services-block services-stages">
+                        <h3 class="services-block-title">Как проходит работа</h3>
+                        <ol class="services-stages-list">
+                            <li>Выезд на место (осмотр)</li>
+                            <li>Составление КП, заключение договора (помощь в открытии ордера)</li>
+                            <li>Выезд ремонтной бригады</li>
+                            <li>Установка ограждений, знаков</li>
+                            <li>Разработка грунта</li>
+                            <li>Вскрытие канала (устранение повреждённого участка трубопровода — сварочно-монтажные работы)</li>
+                            <li>Гидравлические испытания рабочим давлением (при необходимости опрессовка воздухом или нагнетанием большего давления)</li>
+                            <li>Изоляция отремонтированного участка трубы</li>
+                            <li>Восстановление и гидроизоляция канала</li>
+                            <li>Восстановительные работы, благоустройство</li>
+                            <li>Вывоз мусора</li>
+                            <li>Сдача объекта в эксплуатацию</li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="about-lightbox" id="aboutLightbox" aria-hidden="true">
+            <button type="button" class="about-lightbox-close" id="aboutLightboxClose" aria-label="Закрыть просмотр">×</button>
+            <button type="button" class="about-lightbox-nav about-lightbox-prev" id="aboutLightboxPrev" aria-label="Предыдущее фото">‹</button>
+            <div class="about-lightbox-stage">
+                <img class="about-lightbox-image" id="aboutLightboxImage" src="" alt="">
+                <div class="about-lightbox-meta">
+                    <span class="about-lightbox-title" id="aboutLightboxTitle">Аварийные работы</span>
+                    <span class="about-lightbox-counter" id="aboutLightboxCounter"></span>
+                </div>
+            </div>
+            <button type="button" class="about-lightbox-nav about-lightbox-next" id="aboutLightboxNext" aria-label="Следующее фото">›</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
